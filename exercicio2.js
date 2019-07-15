@@ -11,3 +11,17 @@ let filmes = [
 // o usuario vai digitar a idade dele, a funcao tem que dizer quais filmes ele pode ver
 // dica vcs vão ter que usar laco (for, while)
 //pode usar o alert ou o console.log
+
+// Exemplo de resolução com for... in
+// for(let indice in filmes){
+//   if(idade >= filmes[indice].classificacao){
+//     console.log(filmes[indice].titulo);
+//   }
+// }
+
+// Resolução com for... of
+for(let filme of filmes){
+  if(idade >= filme.classificacao){
+    console.log(filme.titulo);
+  }
+}
